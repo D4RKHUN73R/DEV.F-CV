@@ -1,5 +1,6 @@
 * {
     font-family: 'Inter', sans-serif;;
+    box-sizing: border-box;
 }
 
 .contenedor {
@@ -19,8 +20,7 @@
     color: white;
 }
 
-.image-profile {
-    margin: 0px 0px 25px;
+.image-profile img {
     height: 350px;
     width: 300px;
     border-width: 10px;
@@ -39,7 +39,7 @@
 }
 
 .skills {
-    padding: 10px 20px;
+    padding: 10px;
     list-style: none;
     margin: 5px;
 }
@@ -52,6 +52,7 @@ a:visited {
 /* estilos columna 2 */
 #columna2 {
     padding: 40px 150px;
+    background-color: #FFFBEB;
 }
 
 .nombre {
@@ -68,4 +69,47 @@ a:visited {
 .seccion {
     margin: 25px 0px;
     font-size: 16px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #columna1 {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-profile img {
+        border-radius: 150px;
+        width: 300px;
+        height: 320px;
+    }
+
+    #columna1 h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 5px;
+    }
+
+    #columna1 p {
+        display: flex;
+        justify-content: center;
+        margin: 0px 0px 20px;
+    }
+
+    #columna2 {
+        padding: 20px;
+    }
 }
