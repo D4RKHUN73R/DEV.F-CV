@@ -44,6 +44,10 @@
     margin: 5px;
 }
 
+.link {
+    color: #A5DEE5;
+}
+
 a:visited {
         text-decoration: none;
         color: #A5DEE5;
@@ -83,6 +87,10 @@ a:visited {
         align-items: center;
     }
 
+    a:visited {
+        text-decoration: none;
+        color: #A5DEE5;
+    }
     .image-profile {
         display: flex;
         justify-content: center;
